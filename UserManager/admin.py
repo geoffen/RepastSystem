@@ -13,12 +13,12 @@ class UserInfoAdmin(admin.ModelAdmin):
     fields = ('username', 'password', 'first_name', 'last_name', 'email', 'createTime')
 
 
-# class UserAdmin(admin.ModelAdmin):
-#     list_display = ('username', 'createTime')
-#     list_filter = ('createTime',)
-#     date_hierarchy = 'createTime'
-#     ordering = ('-createTime',)
-#     fields = ('username', 'password', 'createTime', 'userInfo')
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('username', 'createTime')
+    list_filter = ('createTime',)
+    date_hierarchy = 'createTime'
+    ordering = ('-createTime',)
+    fields = ('username', 'password', 'createTime', 'userInfo')
 
 admin.site.register(UserInformation, UserInfoAdmin)
 # admin.site.register(User, UserAdmin)
@@ -27,3 +27,5 @@ admin.site.register(UserInformation, UserInfoAdmin)
 #
 # admin.site.register(TestUser)
 # admin.site.register(TestGroup)
+
+
