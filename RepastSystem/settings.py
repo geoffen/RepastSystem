@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
+            os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
             #            'E:\Coding\wechat\django\RepastSystem\RepastSystem\templates',
         ],
         'APP_DIRS': True,
@@ -103,6 +104,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
-)
+# it seems that template directories should add to TEMPLATES object.
+# TEMPLATE_DIRS = (
+#     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+# )
