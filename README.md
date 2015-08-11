@@ -10,5 +10,7 @@
 - [x] Templates
 - [x] Models
 - [x] The Django Admin Site
-- [x] 
-- - [x] 
+- [x] Advanced Views and URLconfs
+- [x] Advanced Templates
+- [x] Advanced Models
+- [x] Generic Views
