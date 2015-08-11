@@ -24,11 +24,25 @@ class Author(models.Model):
         return u'%s %s' % (self.first_name, self.last_name)
 
 
+class BookManager(models.Manager):
+    def get_book_count(self, keyword):
+        return self.filter(title__icontains=keyword).count()
+
+
+#  django1.8 change get_query_set to get_queryset..  so ...
+class BookQuerySet(models.Manager):
+    def get_queryset(self):
+        return super(BookQuerySet, self).get_queryset().filter(title__icontains='Python')
+
+
 class Book(models.Model):
     title = models.CharField(max_length=100)
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher)
     publication_date = models.DateField(blank=True, null=True)
+
+    bookObj = BookManager()
+    bookQS = BookQuerySet()
 
     def __unicode__(self):
         return self.title
