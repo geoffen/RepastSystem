@@ -108,7 +108,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# it seems that template directories should add to TEMPLATES object.
+# it seems that templates directories should add to TEMPLATES object.
 # TEMPLATE_DIRS = (
 #     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 # )

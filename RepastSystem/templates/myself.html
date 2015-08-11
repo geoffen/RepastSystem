@@ -1,0 +1,18 @@
+<html>
+{% load extra_tags %}
+<body>
+    <h1>This is myself.html!</h1>
+    {{ var | replace_word:"!" }}
+<hr/>
+    <p>The time is : {% current_time "%Y-%m-%d %H:%M:%S" %}</p>
+
+<hr/>
+    {% fetch_current_time "%Y-%M-%d %I:%M %p" %}
+    <p>Secondly, the time is {{ current_time_sec }}.</p>
+
+<hr/>
+    {% do_current_time "%Y-%M-%d %I:%M %p" as my_current_time %}
+    <p>Thirdly, the time is {{ my_current_time }}.</p>
+
+</body>
+</html>

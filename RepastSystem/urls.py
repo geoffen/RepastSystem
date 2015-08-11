@@ -26,11 +26,13 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls import *
 from RepastSystem.view import *
+from Human.views import *
 
 urlpatterns = patterns('',
     ('^hello/$', hello),
     ('^time/$', current_datetime),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
+    ('^myself/$', myselfweb),
     url(r'^admin/', include(admin.site.urls)),
 )
 
