@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09ae8f5c-fd2b-47c8-a6cc-f28bda80ac11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RepastSystem/templates/myself.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RepastSystem/settings.py" afterPath="$PROJECT_DIR$/RepastSystem/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RepastSystem/templates/booklist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Books/models.py" afterPath="$PROJECT_DIR$/Books/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RepastSystem/urls.py" afterPath="$PROJECT_DIR$/RepastSystem/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Human/views.py" afterPath="$PROJECT_DIR$/Human/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Books/views.py" afterPath="$PROJECT_DIR$/Books/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RepastSystem.iws" />
@@ -39,6 +39,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Books/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="current_time.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RepastSystem/templates/current_time.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,24 +59,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Human/templatetags/__init__.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RepastSystem/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7506667">
+              <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+              <folding>
+                <element signature="e#845#886#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Books/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RepastSystem/urls.py">
+      <file leaf-file-name="booklist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RepastSystem/templates/booklist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-              <folding>
-                <element signature="e#845#886#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extra_tags.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="extra_tags.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Human/templatetags/extra_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29466668">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -128,16 +148,18 @@
         <option value="$PROJECT_DIR$/UserManager/models.py" />
         <option value="$PROJECT_DIR$/Human/admin.py" />
         <option value="$PROJECT_DIR$/Human/models.py" />
-        <option value="$PROJECT_DIR$/Books/models.py" />
         <option value="$PROJECT_DIR$/RepastSystem/templatetags/extra_tags.py" />
         <option value="$PROJECT_DIR$/Human/templates/myself.html" />
-        <option value="$PROJECT_DIR$/RepastSystem/urls.py" />
         <option value="$PROJECT_DIR$/RepastSystem/settings.py" />
         <option value="$PROJECT_DIR$/RepastSystem/view.py" />
         <option value="$PROJECT_DIR$/RepastSystem/templates/current_time.html" />
         <option value="$PROJECT_DIR$/Human/views.py" />
         <option value="$PROJECT_DIR$/Human/templatetags/extra_tags.py" />
         <option value="$PROJECT_DIR$/RepastSystem/templates/myself.html" />
+        <option value="$PROJECT_DIR$/RepastSystem/templates/about.html" />
+        <option value="$PROJECT_DIR$/Books/models.py" />
+        <option value="$PROJECT_DIR$/Books/views.py" />
+        <option value="$PROJECT_DIR$/RepastSystem/urls.py" />
       </list>
     </option>
   </component>
@@ -233,25 +255,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Human" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RepastSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RepastSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Human" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
+              <option name="myItemId" value="Books" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Books/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49866667">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Books/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38533333">
@@ -693,16 +689,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RepastSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="e#845#886#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,6 +726,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Human/templatetags/extra_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RepastSystem/templates/myself.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
@@ -748,12 +744,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Human/templatetags/extra_tags.py">
+    <entry file="file://$PROJECT_DIR$/RepastSystem/templates/booklist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29466668">
-          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Books/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Books/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RepastSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7506667">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#845#886#0" expanded="true" />
           </folding>
         </state>
       </provider>

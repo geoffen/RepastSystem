@@ -28,11 +28,25 @@ from django.conf.urls import *
 from RepastSystem.view import *
 from Human.views import *
 
+from Books.views import BookListView
+# from django.views.generic.list import ListView
+# from django.views.generic import TemplateView
+# from Books.models import *
+#
+# # book_info = {
+# #     'queryset': Book.objects.all,
+# #     'template_name': 'booklist.html'
+# # }
+
 urlpatterns = patterns('',
     ('^hello/$', hello),
     ('^time/$', current_datetime),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
     ('^myself/$', myselfweb),
+    #  using template view, we no need to  realize views
+    # ('^about/$', TemplateView.as_view(template_name='about.html')),
+    # ('^booklist/$', ListView.as_view(**book_info)),
+    ('^booklist/$', BookListView.as_view()),
     url(r'^admin/', include(admin.site.urls)),
 )
 

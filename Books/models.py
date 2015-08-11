@@ -41,6 +41,8 @@ class Book(models.Model):
     publisher = models.ForeignKey(Publisher)
     publication_date = models.DateField(blank=True, null=True)
 
+    objects = models.Manager()
+
     bookObj = BookManager()
     bookQS = BookQuerySet()
 
