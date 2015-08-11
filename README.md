@@ -7,7 +7,8 @@
 
 ## Achieve list
 - [x] Views and URLconfs
+- [x] Templates
+- [x] Models
+- [x] The Django Admin Site
 - [x] 
-- [x] 
-- [x] 
-- [x] 
+- - [x] 
