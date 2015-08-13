@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+from oscar import OSCAR_MAIN_TEMPLATE_DIR
+from oscar.defaults import *
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -30,18 +33,25 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'localflavor',
     'UserManager',
     'Books',
     'Human',
-)
+    'ckeditor',
+    # 'compressor',
+    'widget_tweaks',
+]
+
+# SITE_ID = 1
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -52,15 +62,25 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    # 'oscar.apps.basket.middleware.BasketMiddleware',
+    # 'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
+# AUTHENTICATION_BACKENDS = (
+#     'oscar.apps.customer.auth_backends.EmailBackend',
+#     'django.contrib.auth.backends.ModelBackend',
+# )
+
+
 ROOT_URLCONF = 'RepastSystem.urls'
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+            OSCAR_MAIN_TEMPLATE_DIR
             #            'E:\Coding\wechat\django\RepastSystem\RepastSystem\templates',
         ],
         'APP_DIRS': True,
@@ -70,6 +90,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'oscar.apps.search.context_processors.search_form',
+                'oscar.apps.promotions.context_processors.promotions',
+                'oscar.apps.checkout.context_processors.checkout',
+                'oscar.apps.customer.notifications.context_processors.notifications',
+                'oscar.core.context_processors.metadata',
             ],
         },
     },
@@ -85,6 +111,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+        'ATOMIC_REQUESTS': True,
     }
 }
 
@@ -112,3 +143,36 @@ STATIC_URL = '/static/'
 # TEMPLATE_DIRS = (
 #     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 # )
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+CKEDITOR_UPLOAD_PATH = "article_images"
+
+# CKEDITOR_CONFIGS = {
+#     'default': {
+#         # 'toolbar': 'Full',
+#         # 'height': 300,
+#         # 'width': 300,
+#         'toolbar': 'Basic'
+#     },
+# }
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': (
+			['div','Source','-','Save','NewPage','Preview','-','Templates'],
+			['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print','SpellChecker','Scayt'],
+			['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+			['Form','Checkbox','Radio','TextField','Textarea','Select','Button', 'ImageButton','HiddenField'],
+			['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+			['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+			['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+			['Link','Unlink','Anchor'],
+			['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+			['Styles','Format','Font','FontSize'],
+			['TextColor','BGColor'],
+			['Maximize','ShowBlocks','-','About', 'pbckcode'],
+		),
+	}
+}
+

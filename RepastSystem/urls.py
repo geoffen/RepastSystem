@@ -28,6 +28,8 @@ from django.conf.urls import *
 from RepastSystem.view import *
 from Human.views import *
 
+# from oscar.app import application
+
 from Books.views import BookListView
 # from django.views.generic.list import ListView
 # from django.views.generic import TemplateView
@@ -39,6 +41,7 @@ from Books.views import BookListView
 # # }
 
 urlpatterns = patterns('',
+    url(r'^i18n/', include('django.conf.urls.i18n')),
     ('^hello/$', hello),
     ('^time/$', current_datetime),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
@@ -47,6 +50,8 @@ urlpatterns = patterns('',
     # ('^about/$', TemplateView.as_view(template_name='about.html')),
     # ('^booklist/$', ListView.as_view(**book_info)),
     ('^booklist/$', BookListView.as_view()),
+    (r'^ckeditor/', include('ckeditor.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    # (r'^myweb/', include(application.urls)),
 )
 

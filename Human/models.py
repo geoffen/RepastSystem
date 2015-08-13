@@ -3,6 +3,7 @@
 
 from localflavor.us.models import USStateField
 from django.db import models
+from ckeditor.fields import RichTextField
 
 
 class MaleManager(models.Manager):
@@ -24,6 +25,8 @@ class Person(models.Model):
     city = models.CharField(max_length=50)
 
     state = USStateField()  # Yes, this is U.S.-centric...
+
+    content = RichTextField('??')
 
     objects = models.Manager()
 
